@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCJAB Food Craves|GINATAANG MANOK</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-TheGirlNextDoor bg-gradient-to-bl from-Tangerine to-Champagne h-full">
+
+    <header class="bg-cover bg-left bg-[url('/BG/NavBarBG1.jpg')]">
+
+        <nav class="flex justify-start items-center w-[92%] mx-auto">
+
+            <div>
+                <img class="w-28 m-5 mr-24 cursor-pointer" src="/BG/FoodCraves.png" alt="Food Craves">
+            </div>
+
+            <div class="nav-links duration-500 md:static absolute bg-Cream md:bg-transparent md:min-h-fit min-h-[24vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:gap-[4vw] gap-6 text-2xl font-bold text-Red">
+                    <li><a class="hover:text-Cream" href="index.html">HOME</a></li>
+                    <li><a class="hover:text-Cream" href="Recipes.html">RECIPES</a></li>
+                    <li><a class="hover:text-Cream" href="#ABOUT">ABOUT US</a></li>
+                    <li><a class="hover:text-Cream" href="#CONTACT">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-end gap-6 ml-60">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer bg-Cream rounded-full md:hidden"></ion-icon>
+            </div>
+
+    </header>
+
+    <div id="Recipes">
+
+        <h1 class="font-serif text-2xl p-3 text-center" >Ginataang Manok</h1>
+        <div class="m-0 p-0 box-border">
+
+            <div class="flex justify-center align-middle min-h-full">
+
+                <img class="w-[35%] h-[35%] p-5 m-5 rounded-2xl" src="/BG/GinataangManok.jpg" alt="Sinigang">
+
+                <div class="md:m-auto md:w-auto">
+                    <div>
+                        <h2 class="text-5xl">INGREDIENTS</h2>
+                        <ul class="list-disc text-2xl">
+                            <li>2 lbs chicken <i>cut into serving pieces</i></li>
+                            <li>2 cups coconut milk</li>
+                            <li>1/2 bunch spinach</li>
+                            <li>2 tbsp garlic <i>minced</i></li>
+                            <li>1 large onion <i>sliced</i></li>
+                            <li>2 tbsp ginger <i>julienned</i></li>
+                            <li>8 ounces green papaya <i>wedged</i></li>
+                            <li>1/2 tsp paprika <i>optional</i></li>
+                            <li>1 piece long green chili <i>optional</i></li>
+                            <li>4 pieces Thai <i>chili</i> or <i>siling labuyo if available, chopped (optional)</i></li>
+                            <li>2 tbsp cooking oil</li>
+                            <li>Salt and pepper to taste</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-5 m-5">
+                <h1 class="text-5xl">DIRECTIONS</h1>
+                <ul class="p-3 text-2xl">
+                    <li>
+                        <h1 class="text-2xl"><b>Step 1</b></h1>
+                        <p>Heat the cooking pot and pour-in the cooking oil.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 2</b></h1>
+                        <p>Sauté the garlic, onion, and ginger.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 3</b></h1>
+                        <p>Add the chicken and cook until the color of the outer part turns light brown.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 4</b></h1>
+                        <p>Pour-in the coconut milk while stirring and bring to a boil.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 5</b></h1>
+                        <p>Sprinkle some paprika then simmer for 30 minutes or until the chicken is tender and the coconut milk becomes thick.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 6</b></h1>
+                        <p>Add the long green chili and Thai chili then simmer for 5 minutes</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 7</b></h1>
+                        <p>Add the green papaya then simmer for 5 to 8 minutes.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 8</b></h1>
+                        <p>Put-in the spinach, salt, and pepper then simmer for 3 minutes.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 9</b></h1>
+                        <p>Turn-off the heat then transfer the cooked chicken to a serving plate</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 10</b></h1>
+                        <p>Serve hot. Share and enjoy!</p>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+    <script>
+
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e)
+        {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[8%]')
+        }
+
+    </script>
+    
+</body>
+</html>

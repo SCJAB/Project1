@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCJAB Food Craves|ABOUT US</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-TheGirlNextDoor bg-gradient-to-bl from-Tangerine to-Champagne h-screen">
+
+    <header class="bg-cover bg-left bg-[url('/BG/NavBarBG1.jpg')]">
+
+        <nav class="flex justify-start items-center w-[92%] mx-auto">
+
+            <div>
+                <img class="w-28 m-5 mr-24 cursor-pointer" src="/BG/FoodCraves.png" alt="Food Craves">
+            </div>
+
+            <div class="nav-links duration-500 md:static absolute bg-Cream md:bg-transparent md:min-h-fit min-h-[24vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:gap-[4vw] gap-6 text-2xl font-bold text-Red">
+                    <li><a class="hover:text-Cream" href="index.html">HOME</a></li>
+                    <li><a class="hover:text-Cream" href="Recipes.html">RECIPES</a></li>
+                    <li><a class="hover:text-Cream" href="AboutUs.html">ABOUT US</a></li>
+                    <li><a class="hover:text-Cream" href="ContactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-end gap-6 ml-60">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer bg-Cream rounded-full md:hidden"></ion-icon>
+            </div>
+
+    </header>
+
+    <section class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px ">
+        <h1 class="font-extrabold text-5xl p-3 text-center" >About Us</h1>
+
+        <div class="container mx-auto">
+      
+            <div class="-mx-4 flex flex-wrap items-center justify-between">
+      
+                <div class="w-full px-4 lg:w-6/12">
+        
+                    <div class="-mx-3 flex items-center sm:-mx-4">
+        
+                        <div class="w-full px-3 sm:px-4 xl:w-1/2">
+        
+                            <div class="relative z-10 my-4">
+                            
+                                <img class="bg-Cream rounded-3xl" src="/BG/FoodCraves.png" alt="Food Craves"/>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
+
+                    <div class="mt-10 lg:mt-0">
+
+                        <h2 class="text-dark mb-8 text-3xl font-bold sm:text-4xl">Welcome to our Filipino food website! Our mission is to share the delicious and diverse flavors of Filipino cuisine with the world.
+                        </h2>
+
+                        <p class="text-body-color mb-8 text-base">We are a team of passionate food enthusiasts who are dedicated to promoting Filipino culture through food. Our website features a wide variety of traditional and modern Filipino dishes, from savory adobo to sweet leche flan. <br>
+                        <br> Our recipes are carefully curated and tested to ensure that they are easy to follow and produce authentic, flavorful results. We also provide tips and tricks for cooking and serving Filipino dishes, so even if you are new to this cuisine, you can enjoy it to the fullest.
+                        </p>
+
+                        <p class="text-body-color mb-12 text-base">We are proud to showcase the rich history and cultural significance of Filipino food. Our team includes food historians and experts who provide insights into the origins of dishes and the ingredients that make them unique. <br><br> We hope that our website inspires you to explore the wonderful world of Filipino cuisine and to try new flavors and ingredients. Join us on this delicious journey and experience the best of Filipino food!
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e)
+        {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[8%]')
+        }
+
+    </script>
+
+</body>
+
+</html>

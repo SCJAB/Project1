@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCJAB Food Craves|RECIPES</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-TheGirlNextDoor bg-gradient-to-bl from-Tangerine to-Champagne h-full">
+    <header class="bg-cover bg-left bg-[url('/BG/NavBarBG1.jpg')]">
+
+        <nav class="flex justify-start items-center w-[92%] mx-auto">
+
+            <div>
+                <img class="w-28 m-5 mr-24 cursor-pointer" src="/BG/FoodCraves.png" alt="Food Craves">
+            </div>
+
+            <div class="nav-links duration-500 md:static absolute bg-Cream md:bg-transparent md:min-h-fit min-h-[24vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:gap-[4vw] gap-6 text-2xl font-bold text-Red">
+                    <li><a class="hover:text-Cream" href="index.html">HOME</a></li>
+                    <li><a class="hover:text-Cream" href="Recipes.html">RECIPES</a></li>
+                    <li><a class="hover:text-Cream" href="AboutUs.html">ABOUT US</a></li>
+                    <li><a class="hover:text-Cream" href="ContactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-end gap-6 ml-60">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer bg-Cream rounded-full md:hidden"></ion-icon>
+            </div>
+
+    </header>
+
+    <div id="Recipes">
+
+        <h1 class="font-extrabold text-5xl p-3 text-center" >Recipes</h1>
+
+        <div class="m-0 p-0 box-border">
+            <div class="flex justify-center align-middle min-h-full">
+
+                <img class="w-[32%] h-[32%] p-12 m-8 rounded-3xl" src="/BG/AdobongBaboy.jpg" alt="Adobong Baboy">
+
+                <div id="text-box" class="md:m-auto md:w-auto">
+                        
+                    <div class="px-10">
+                        <h1 class="text-7xl font-bold">Adobong Baboy</h1>
+                        <h2 class="text-xl font-serif"><strong>DESCRIPTION</strong></h2>
+                        <p>Adobong Baboy is a popular Filipino dish made with tender pork cooked in a savory and tangy sauce made of soy sauce, vinegar, garlic, and black pepper. It is a flavorful and comforting dish that is perfect for any occasion and can be enjoyed with steamed rice.</p>
+                    </div>
+
+                    <div class="items-center py-3 px-10">
+                        <button class="bg-Cream p-2 rounded-3xl duration-500 hover:bg-Red hover:text-Tangerine">
+                        <a href="AdobongBaboy.html">VIEW RECIPE</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center align-middle min-h-full">
+
+                <img class="w-[32%] h-[35%] p-12 m-8 rounded-3xl" src="/BG/BeefKareKare.jpg" alt="Beef Kare Kare">
+
+                <div id="text-box" class="md:m-auto md:w-auto">
+                        
+                    <div class="px-10">
+                        <h1 class="text-7xl font-bold">Beef Kare-Kare</h1>
+                        <h2 class="text-xl font-serif"><strong>DESCRIPTION</strong></h2>
+                        <p>Filipino Beef Kare-Kare is a traditional Filipino stew that is typically made with oxtail, beef tripe or beef shank, along with various vegetables like eggplant, banana blossoms, and string beans. The dish is known for its thick, savory, and slightly sweet peanut sauce which is made with ground peanuts, annatto seeds, and other spices. Kare-Kare is often served with a side of shrimp paste (bagoong) and rice. It is considered a staple dish in many Filipino celebrations and gatherings, and is often enjoyed during special occasions and holidays.</p>
+                    </div>
+
+                    <div class="items-center py-3 px-10">
+                        <button class="bg-Cream p-2 rounded-3xl duration-500 hover:bg-Red hover:text-Tangerine">
+                        <a href="BeefKareKare.html">VIEW RECIPE</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center align-middle min-h-full">
+
+                <img class="w-[32%] h-[35%] p-12 m-8 rounded-3xl" src="/BG/Sinigang.jpeg" alt="Sinigang">
+
+                <div id="text-box" class="md:m-auto md:w-auto">
+                        
+                    <div class="px-10">
+                        <h1 class="text-7xl font-bold">Sinigang</h1>
+                        <h2 class="text-xl font-serif"><strong>DESCRIPTION</strong></h2>
+                        <p>Sinigang is a tamarind-based soup that is known for its sour and savory taste. You can make it with either fish, pork belly, spare ribs or corned beef.</p>
+                    </div>
+
+                    <div class="items-center py-3 px-10">
+                        <button class="bg-Cream p-2 rounded-3xl duration-500 hover:bg-Red hover:text-Tangerine">
+                        <a href="Sinigang.html">VIEW RECIPE</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center align-middle min-h-full">
+
+                <img class="w-[32%] h-[35%] p-12 m-8 rounded-3xl" src="/BG/KinilawsaGata.jpg" alt="Kinilaw">
+
+                <div id="text-box" class="md:m-auto md:w-auto">
+                        
+                    <div class="px-10">
+                        <h1 class="text-7xl font-bold">Kinilaw</h1>
+                        <h2 class="text-xl font-serif"><strong>DESCRIPTION</strong></h2>
+                        <p>It hailed from the Visayan region and is derived from the word, kilaw, which means raw or uncooked. The meat, normally a fish, is 'cooked' without the application of heat but is rather cured in vinegar. Additional souring agents like calamansi, kamias, tamarind, or green mangoes to enhance its tartness.  To complete the dish, black pepper, onions, ginger, and chili peppers are also added.</p>
+                    </div>
+
+                    <div class="items-center py-3 px-10">
+                        <button class="bg-Cream p-2 rounded-3xl duration-500 hover:bg-Red hover:text-Tangerine">
+                        <a href="Kinilaw.html">VIEW RECIPE</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center align-middle min-h-full">
+
+                <img class="w-[32%] h-[35%] p-12 m-8 rounded-3xl" src="/BG/GinataangManok.jpg" alt="...">
+
+                <div id="text-box" class="md:m-auto md:w-auto">
+                        
+                    <div class="px-10">
+                        <h1 class="text-7xl font-bold">Ginataang Manok</h1>
+                        <h2 class="text-xl font-serif"><strong>DESCRIPTION</strong></h2>
+                        <p>Ginataang Manok is translated as chicken stewed in coconut milk. This is a simple Filipino dish wherein chicken is sautéed in garlic, onion, and ginger then stewed in coconut milk. A more traditional approach requires native hen (usually grown in the backyard). It is much tastier compared to broiler chickens and adds more flavor to the dish. </p>
+                    </div>
+
+                    <div class="items-center py-3 px-10">
+                        <button class="bg-Cream p-2 rounded-3xl duration-500 hover:bg-Red hover:text-Tangerine">
+                        <a href="GinataangManok.html">VIEW RECIPE</a>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e)
+        {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[8%]')
+        }
+
+    </script>
+    
+</body>
+</html>

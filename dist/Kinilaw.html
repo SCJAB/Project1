@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCJAB Food Craves|KINILAW</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+</head>
+
+<body class="font-TheGirlNextDoor bg-gradient-to-bl from-Tangerine to-Champagne h-full">
+
+    <header class="bg-cover bg-left bg-[url('/BG/NavBarBG1.jpg')]">
+
+        <nav class="flex justify-start items-center w-[92%] mx-auto">
+
+            <div>
+                <img class="w-28 m-5 mr-24 cursor-pointer" src="/BG/FoodCraves.png" alt="Food Craves">
+            </div>
+
+            <div class="nav-links duration-500 md:static absolute bg-Cream md:bg-transparent md:min-h-fit min-h-[24vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:gap-[4vw] gap-6 text-2xl font-bold text-Red">
+                    <li><a class="hover:text-Cream" href="index.html">HOME</a></li>
+                    <li><a class="hover:text-Cream" href="Recipes.html">RECIPES</a></li>
+                    <li><a class="hover:text-Cream" href="#ABOUT">ABOUT US</a></li>
+                    <li><a class="hover:text-Cream" href="#CONTACT">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-end gap-6 ml-60">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer bg-Cream rounded-full md:hidden"></ion-icon>
+            </div>
+
+    </header>
+
+    <div id="Recipes">
+
+        <h1 class="font-serif text-2xl p-3 text-center" >Kinilaw</h1>
+        <div class="m-0 p-0 box-border">
+
+            <div class="flex justify-center align-middle min-h-full">
+
+                <img class="w-[35%] h-[35%] p-5 m-5 rounded-2xl" src="/BG/KinilawsaGata.jpg" alt="Kinilaw">
+
+                <div class="md:m-auto md:w-auto">
+                    <div>
+                        <h2 class="text-5xl">INGREDIENTS</h2>
+                        <ul class="list-disc text-2xl">
+                            <li>1 pounds Tanigue or Tuna skinned and deboned</li>
+                            <li>1 cup vinegar</li>
+                            <li>4 pieces calamansi or half of a lemon</li>
+                            <li>2 thumbs ginger minced</li>
+                            <li>1 medium red onion minced</li>
+                            <li>2 pieces green chili or Thai chili, cut into thin slices</i></li>
+                            <li>salt</li>
+                            <li>fresh ground pepper</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-5 m-5">
+                <h1 class="text-5xl">DIRECTIONS</h1>
+                <ul class="p-3 text-2xl">
+                    <li>
+                        <h1 class="text-2xl"><b>Step 1</b></h1>
+                        <p>Wash the fish meat and tap dry with paper towels. Cut into 1-inch cubes.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 2</b></h1>
+                        <p>Place the fish cubes in a bowl. Pour in the vinegar and the juice from calamansi. Season with salt and pepper. Add the ginger, onion, and chili. Toss gently until well blended.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 3</b></h1>
+                        <p>Cover and marinate for an hour or up to 3 hours in the fridge. The fish should lose its translucent and pinkish color and should turn whiter and opaque.</p>
+                    </li>
+                    <li>
+                        <h1 class="text-2xl"><b>Step 4</b></h1>
+                        <p>Transfer to a serving dish and serve immediately.</p>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+    <script>
+
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e)
+        {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[8%]')
+        }
+
+    </script>
+    
+</body>
+</html>

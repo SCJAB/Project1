@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCJAB Food Craves</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-TheGirlNextDoor bg-gradient-to-bl from-Tangerine to-Champagne h-screen">
+
+    <header class="bg-cover bg-left bg-[url('/BG/NavBarBG1.jpg')]">
+
+        <nav class="flex justify-start items-center w-[92%] mx-auto">
+
+            <div>
+                <img class="w-28 m-5 mr-24 cursor-pointer" src="/BG/FoodCraves.png" alt="Food Craves">
+            </div>
+
+            <div class="nav-links duration-500 md:static absolute bg-Cream md:bg-transparent md:min-h-fit min-h-[24vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:gap-[4vw] gap-6 text-2xl font-bold text-Red">
+                    <li><a class="hover:text-Cream" href="index.html">HOME</a></li>
+                    <li><a class="hover:text-Cream" href="Recipes.html">RECIPES</a></li>
+                    <li><a class="hover:text-Cream" href="AboutUs.html">ABOUT US</a></li>
+                    <li><a class="hover:text-Cream" href="ContactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-end gap-6 ml-60">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer bg-Cream rounded-full md:hidden"></ion-icon>
+            </div>
+
+    </header>
+
+    <div class="flex md:m-auto py-10 pt-44 mx-15 my-10 justify-center align-middle">
+        <div>
+            <h1 class="bg-clip-text text-8xl font-extrabold text-opacity-100 text-center bg-gradient-to-r from-Red to-orange-700 text-transparent">"Delight your taste buds with our Filipino recipes!"</h1>
+        </div>
+    </div>
+
+    <script>
+
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e)
+        {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[8%]')
+        }
+
+    </script>
+
+</body>
+
+</html>

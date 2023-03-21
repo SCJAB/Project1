@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCJAB Food Craves|CONTACT US</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-TheGirlNextDoor bg-gradient-to-bl from-Tangerine to-Champagne h-screen">
+
+    <header class="bg-cover bg-left bg-[url('/BG/NavBarBG1.jpg')]">
+
+        <nav class="flex justify-start items-center w-[92%] mx-auto">
+
+            <div>
+                <img class="w-28 m-5 mr-24 cursor-pointer" src="/BG/FoodCraves.png" alt="Food Craves">
+            </div>
+
+            <div class="nav-links duration-500 md:static absolute bg-Cream md:bg-transparent md:min-h-fit min-h-[24vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:gap-[4vw] gap-6 text-2xl font-bold text-Red">
+                    <li><a class="hover:text-Cream" href="index.html">HOME</a></li>
+                    <li><a class="hover:text-Cream" href="Recipes.html">RECIPES</a></li>
+                    <li><a class="hover:text-Cream" href="AboutUs.html">ABOUT US</a></li>
+                    <li><a class="hover:text-Cream" href="ContactUs.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="flex items-end gap-6 ml-60">
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer bg-Cream rounded-full md:hidden"></ion-icon>
+            </div>
+
+    </header>
+
+    <div class="container my-24 px-6 mx-auto">
+
+        <section class="mb-32 text-center text-Red">
+
+          <div class="max-w-[700px] mx-auto px-3 lg:px-6">
+
+            <h2 class="text-6xl font-bold mb-12">Contact us</h2>
+
+            <form>
+
+              <div class="form-group mb-6">
+                <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-extrabold text-Red bg-Champagne bg-clip-padding border border-solid border-Cream rounded transition ease-in-out m-0 focus:text-Tangerine focus:bg-Red focus:border-Champagne  focus:outline-none" id="exampleInput7"
+                  placeholder="Name">
+              </div>
+
+              <div class="form-group mb-6">
+                <input type="text" class="form-control block w-full px-3 py-1.5 text-base font-extrabold text-Red bg-Champagne bg-clip-padding border border-solid border-Cream rounded transition ease-in-out m-0 focus:text-Tangerine focus:bg-Red focus:border-Champagne  focus:outline-none" 
+                  placeholder="Email address">
+              </div>
+
+              <div class="form-group mb-6">
+                <textarea class=" form-control block w-full px-3 py-1.5 text-base font-extrabold text-Red bg-Champagne bg-clip-padding border border-solid border-Cream rounded transition ease-in-out m-0  focus:text-Tangerine focus:bg-Red focus:border-Champagne focus:outline-none" id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
+              </div>
+
+              <div class="form-group form-check text-center mb-6">
+                <input type="checkbox"
+                  class="form-check-input appearance-none h-4 w-4 border border-Cream rounded-sm bg-Champagne checked:bg-Red checked:border-Cream focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
+                  id="exampleCheck87" checked>
+                <label class="form-check-label inline-block text-Red" for="exampleCheck87">Send me a copy of this
+                  message</label>
+              </div>
+
+              <button type="submit" class="w-full px-6 py-2.5 bg-Red  text-Cream font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-Tangerine hover:shadow-lg focus:bg-Champagne focus:shadow-lg focus:outline-none focus:ring-0 active:bg-Red active:shadow-lg transition duration-150 ease-in-out">Send
+              </button>
+            </form>
+          </div>
+        </section>
+      
+      </div>
+
+    <script>
+
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e)
+        {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[8%]')
+        }
+
+    </script>
+
+</body>
+
+</html>
